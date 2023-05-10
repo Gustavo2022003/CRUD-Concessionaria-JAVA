@@ -11,5 +11,11 @@ public class Menu {
         return menu_input;
     }
 
-    public Integer menu ()
+    public Integer menu_cadastro(){
+        System.out.println("Qual tipo de veículo será cadastrado?\n1 - Carro\n2 - Moto\n3 - Caminhão\n4 - Bicicleta\n5 - Voltar ao menu principal\n");
+
+        Integer menu_input = scanner.nextInt();
+
+        return menu_input;
+    }
 }
