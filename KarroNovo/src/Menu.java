@@ -6,8 +6,9 @@ public class Menu {
 
     public Menu(){
         this.veiculos.add(new Carro(4, "G", 1, "Prata", "Chevrolet", "Prisma", 40000.00));
-        this.veiculos.add(new Moto(false, 150, "G", 3, "rosa", "kawasaki", "ninja", 40000.00));
-        this.veiculos.add(new Caminhao(1000.00, 1, "G", 1, "Prata", "Chevrolet", "Prisma", 40000.00));
+        this.veiculos.add(new Moto(false, 150, "G", 3, "Verde", "kawasaki", "ninja", 40000.00));
+        this.veiculos.add(new Caminhao(1000.00, 1, "G", 4, "Prata", "Chevrolet", "Prisma", 40000.00));
+        this.veiculos.add(new Bicicleta("C", 2, "Branco", "Calói", "BMX", 5000.00));
         System.out.println("Veiculos do Banco de Dados carregados! \n");
     }
 
@@ -25,28 +26,33 @@ public class Menu {
         switch (user_input){
             case 1:
                 menu_cadastro();
+                menu();
                 break;
             case 2:
                 editarVeiculo();
+                menu();
                 break;
             case 3:
                 consultarVeiculo();
+                menu();
                 break;
             case 4:
                 excluirVeiculo();
+                menu();
                 break;
             case 5:
                 for (Veiculo veiculo : veiculos){
                     veiculo.exibir();
                 }
+                menu();
                 break;
             case 6:
                 break;
             default:
                 System.out.println("Erro!");
+                menu();
                 break;
         }
-        menu();
 
     }
 
@@ -97,10 +103,9 @@ public class Menu {
             if (veiculo.getCodigo().equals(codigo)) {
                 return index;
             } else {
-                return index++;
+                index++;
             }
         }
-
         return -1;
     }
 

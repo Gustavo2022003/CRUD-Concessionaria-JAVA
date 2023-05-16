@@ -26,6 +26,7 @@ public class Bicicleta extends Veiculo{
 
     @Override
     public void exibir(){
+        System.out.println("\n==BICICLETA==");
         super.exibir();
         System.out.println("Tipo de freio: " + this.tipoFreio);
     }
