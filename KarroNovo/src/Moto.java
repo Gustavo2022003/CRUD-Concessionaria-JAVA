@@ -37,7 +37,7 @@ public class Moto extends Automotor{
 
     @Override
     public void exibir(){
-        System.out.println("\n==MOTO==");
+        System.out.println("\n\u001B[34m==MOTO==\u001B[0m");
         super.exibir();
         System.out.println("Partida elétrica: " + this.partidaEletrica + "\nCilindradas: " + this.cilindradas);
     }

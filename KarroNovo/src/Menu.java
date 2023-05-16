@@ -9,7 +9,7 @@ public class Menu {
         this.veiculos.add(new Moto(false, 150, "G", 3, "Verde", "kawasaki", "ninja", 40000.00));
         this.veiculos.add(new Caminhao(1000.00, 1, "G", 4, "Prata", "Chevrolet", "Prisma", 40000.00));
         this.veiculos.add(new Bicicleta("C", 2, "Branco", "Calói", "BMX", 5000.00));
-        System.out.println("Veiculos do Banco de Dados carregados! \n");
+        System.out.println("Veiculos do Banco de Dados carregados!");
     }
 
     ArrayList<Veiculo> veiculos = new ArrayList<Veiculo>();
@@ -19,7 +19,7 @@ public class Menu {
 
     public void menu(){
         System.out.println("");
-        System.out.println("O que deseja fazer?\n1 - Cadastrar novo veículo\n2 - Editar veículo\n3 - Ver informações de um veículo específico\n4 - Excluir um veículo\n5 - Ver todos os veículos\n6 - Sair");
+        System.out.println("\u001B[32mO que deseja fazer?\u001B[0m\n1 - Cadastrar novo veículo\n2 - Editar veículo\n3 - Ver informações de um veículo específico\n4 - Excluir um veículo\n5 - Ver todos os veículos\n6 - Sair");
 
         Integer user_input =  scanner.nextInt();
 
@@ -58,7 +58,7 @@ public class Menu {
 
     public void menu_cadastro(){
 
-        System.out.println("Qual tipo de veículo será cadastrado?\n1 - Carro\n2 - Moto\n3 - Caminhão\n4 - Bicicleta\n5 - Voltar ao menu principal");
+        System.out.println("\u001B[35mQual tipo de veículo será cadastrado?\u001B[0m\n1 - Carro\n2 - Moto\n3 - Caminhão\n4 - Bicicleta\n5 - Voltar ao menu principal");
 
         Integer user_input = scanner.nextInt();
 

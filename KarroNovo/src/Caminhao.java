@@ -20,7 +20,7 @@ public class Caminhao extends Automotor{
 
     @Override
     public void exibir(){
-        System.out.println("\n==CAMINHAO==");
+        System.out.println("\n\u001B[33m==CAMINHÃO==\u001B[0m");
         super.exibir();
         System.out.println("Carga máxima: " + this.cargaMax + "\nNúmero de eixos: " + this.numEixos);
     }

@@ -17,7 +17,7 @@ public class Carro extends Automotor{
 
     @Override
     public void exibir(){
-        System.out.println("\n==CARRO==");
+        System.out.println("\n\u001B[31m==CARRO==\u001B[0m");
         super.exibir();
         System.out.println("Número de portas: " + this.quantidadePortas);
     }
