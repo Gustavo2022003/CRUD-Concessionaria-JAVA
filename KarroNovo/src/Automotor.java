@@ -7,12 +7,12 @@ public class Automotor extends Veiculo{
 
     public Automotor(){
         super();
-        System.out.println("Digite o tipo de combustível\nG - Gasolina\nA - Alcool\nF - Flex\nE - Eletrico\nD - Diesel\n");
+        System.out.println("Digite o tipo de combustível\nG - Gasolina\nA - Alcool\nF - Flex\nE - Eletrico\nD - Diesel");
         this.tipoCombustivel = scanner.nextLine().toUpperCase();
 
-        while(!(this.tipoCombustivel.contains("G")  || this.tipoCombustivel.contains("A") || this.tipoCombustivel.contains("F") || this.tipoCombustivel.contains("E") || this.tipoCombustivel.contains("D"))){
+        while(!(this.tipoCombustivel.equals("G")  || this.tipoCombustivel.equals("A") || this.tipoCombustivel.equals("F") || this.tipoCombustivel.equals("E") || this.tipoCombustivel.equals("D"))){
             System.out.println("Digite o tipo de combustível\nG- Gasolina\nA- Alcool\nF- Flex\nE- Eletrico\nD- Diesel");
-            this.tipoCombustivel = scanner.nextLine();
+            this.tipoCombustivel = scanner.nextLine().toUpperCase();
         }
     }
 
@@ -37,9 +37,10 @@ public class Automotor extends Veiculo{
         System.out.println("Digite o tipo de combustível\nG - Gasolina\nA - Alcool\nF - Flex\nE - Eletrico\nD - Diesel\n");
         this.tipoCombustivel = scanner.nextLine().toUpperCase();
 
-        while(!(this.tipoCombustivel.contains("G")  || this.tipoCombustivel.contains("A") || this.tipoCombustivel.contains("F") || this.tipoCombustivel.contains("E") || this.tipoCombustivel.contains("D"))){
+        while(!(this.tipoCombustivel.equals("G")  || this.tipoCombustivel.equals("A") || this.tipoCombustivel.equals("F") || this.tipoCombustivel.equals("E") || this.tipoCombustivel.equals("D"))){
+            System.out.println("Valor inválido!");
             System.out.println("Digite o tipo de combustível\nG- Gasolina\nA- Alcool\nF- Flex\nE- Eletrico\nD- Diesel");
-            this.tipoCombustivel = scanner.nextLine();
+            this.tipoCombustivel = scanner.nextLine().toUpperCase();
         }
     }
 }

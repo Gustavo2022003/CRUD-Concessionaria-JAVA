@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,19 +13,19 @@ public class Veiculo {
     public Veiculo(){
 
         System.out.println("Digite o código do veículo:");
-        this.codigo = scanner.nextInt();
+        this.codigo = Integer.parseInt(scanner.nextLine());
 
         System.out.println("Digite a cor do veículo:");
-        this.cor = scanner.next();
+        this.cor = scanner.nextLine();
 
         System.out.println("Digite a marca do veículo:");
-        this.marca = scanner.next();
+        this.marca = scanner.nextLine();
 
         System.out.println("Digite o modelo do veículo:");
-        this.modelo = scanner.next();
+        this.modelo = scanner.nextLine();
 
-        System.out.println("Digite o valor do veículo:");
-        this.valor = scanner.nextDouble();
+        System.out.print("Digite o valor do veículo:\nR$ ");
+        this.valor = Double.parseDouble(scanner.nextLine());
 
     }
 
@@ -46,19 +47,19 @@ public class Veiculo {
 
     public void editar(){
         System.out.println("Digite o código do veículo:");
-        this.codigo = scanner.nextInt();
+        this.codigo = Integer.parseInt(scanner.nextLine());
 
         System.out.println("Digite a cor do veículo:");
-        this.cor = scanner.next();
+        this.cor = scanner.nextLine();
 
         System.out.println("Digite a marca do veículo:");
-        this.marca = scanner.next();
+        this.marca = scanner.nextLine();
 
         System.out.println("Digite o modelo do veículo:");
-        this.modelo = scanner.next();
+        this.modelo = scanner.nextLine();
 
-        System.out.println("Digite o valor do veículo:");
-        this.valor = scanner.nextDouble();
+        System.out.print("Digite o valor do veículo:\nR$ ");
+        this.valor = Double.parseDouble(scanner.nextLine());
     }
 
 }

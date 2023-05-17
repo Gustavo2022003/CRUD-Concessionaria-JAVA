@@ -6,7 +6,7 @@ public class Menu {
 
     public Menu(){
         this.veiculos.add(new Carro(4, "G", 1, "Prata", "Chevrolet", "Prisma", 40000.00));
-        this.veiculos.add(new Moto(false, 150, "G", 3, "Verde", "kawasaki", "ninja", 40000.00));
+        this.veiculos.add(new Moto(false, 50, "G", 3, "Verde", "kawasaki", "ninja", 40000.00));
         this.veiculos.add(new Caminhao(1000.00, 1, "G", 4, "Prata", "Chevrolet", "Prisma", 40000.00));
         this.veiculos.add(new Bicicleta("C", 2, "Branco", "Calói", "BMX", 5000.00));
         System.out.println("Veiculos do Banco de Dados carregados!");
@@ -26,8 +26,8 @@ public class Menu {
         switch (user_input){
             case 1:
                 menu_cadastro();
-                menu();
-                break;
+            menu();
+            break;
             case 2:
                 editarVeiculo();
                 menu();
@@ -49,7 +49,7 @@ public class Menu {
             case 6:
                 break;
             default:
-                System.out.println("Erro!");
+                System.out.println("Erro - Valor inválido!");
                 menu();
                 break;
         }
@@ -76,10 +76,11 @@ public class Menu {
                 this.veiculos.add(new Bicicleta());
                 break;
             case 5:
-                menu();
+
                 break;
             default:
-                System.out.println("Erro!");
+                System.out.println("Erro - Valor inválido!");
+                menu_cadastro();
         }
     }
 
